@@ -20,9 +20,17 @@ namespace dizain
     /// </summary>
     public partial class MainWindow : Window
     {
+        ApplicationContext db;
+
         public MainWindow()
         {
             InitializeComponent();
+            db = new ApplicationContext();
+            List<User> users = db.Users.ToList();
+            string str = "";
+            foreach (User user in users)
+                str += "Login: " + user.Login + " | ";
+            exampleText.Text = str;
         }
 
         private void Button_Reg_Click(object sender, RoutedEventArgs e)
@@ -63,6 +71,10 @@ namespace dizain
                 textBoxEmail.ToolTip = " ";
                 textBoxEmail.Background = Brushes.Transparent;
                 MessageBox.Show("Регистрация прошла успешна");
+                User user = new User(Login, Pass, Email);
+
+                db.Users.Add(user);
+                db.SaveChanges();
             }
             
         }

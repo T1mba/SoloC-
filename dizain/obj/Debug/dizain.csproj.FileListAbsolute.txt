@@ -20,3 +20,12 @@ C:\Users\Тимба\source\repos\dizain\dizain\obj\Debug\dizain.csproj.CoreCompi
 C:\Users\Тимба\source\repos\dizain\dizain\obj\Debug\dizain.csproj.CopyComplete
 C:\Users\Тимба\source\repos\dizain\dizain\obj\Debug\dizain.exe
 C:\Users\Тимба\source\repos\dizain\dizain\obj\Debug\dizain.pdb
+C:\Users\Тимба\source\repos\dizain\dizain\bin\Debug\FirstBD.db
+C:\Users\Тимба\source\repos\dizain\dizain\bin\Debug\EntityFramework.dll
+C:\Users\Тимба\source\repos\dizain\dizain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Тимба\source\repos\dizain\dizain\bin\Debug\System.Data.SQLite.dll
+C:\Users\Тимба\source\repos\dizain\dizain\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Тимба\source\repos\dizain\dizain\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Тимба\source\repos\dizain\dizain\bin\Debug\EntityFramework.xml
+C:\Users\Тимба\source\repos\dizain\dizain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Тимба\source\repos\dizain\dizain\bin\Debug\System.Data.SQLite.xml
