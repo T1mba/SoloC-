@@ -19,3 +19,4 @@ C:\Users\Тимба\source\repos\dizain\dizain\obj\Debug\dizain.csproj.CoreCompi
 C:\Users\Тимба\source\repos\dizain\dizain\obj\Debug\dizain.csproj.CopyComplete
 C:\Users\Тимба\source\repos\dizain\dizain\obj\Debug\dizain.exe
 C:\Users\Тимба\source\repos\dizain\dizain\obj\Debug\dizain.pdb
+C:\Users\Тимба\source\repos\dizain\dizain\obj\Debug\App.baml

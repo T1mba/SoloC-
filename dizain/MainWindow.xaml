@@ -6,6 +6,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:dizain"
         mc:Ignorable="d"
+           xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         Title="ПриложениеДляПользователя" Height="600" Width="800">
 
     <Grid Background="White">
@@ -16,7 +17,7 @@
             Background="Wheat"
             CornerRadius="15"
             Margin="10"
-            Padding="20">
+            Padding="40">
             <Border.Effect>
                 <DropShadowEffect
                     BlurRadius="50"
@@ -30,7 +31,7 @@
                     Background="Black"
                     Foreground="White"
                     FontFamily="century gothic"
-                    FontSize="30"
+                    FontSize="20"
                     Margin="0 10"
                     />
                 <Button
@@ -39,7 +40,7 @@
                     Background="White"
                     Foreground="Black"
                     FontFamily="century gothic"
-                    FontSize="30"
+                    FontSize="20"
                     Margin="0 10 "/>
                 <Button
                     Content="Обувь"
@@ -47,7 +48,7 @@
                     Background="Black"
                     Foreground="White"
                     FontFamily="century gothic"
-                    FontSize="30"
+                    FontSize="20"
                     Margin="0 10 "/>
                 <Button
                     Content="Украшения"
@@ -55,9 +56,10 @@
                     Background="White"
                     Foreground="Black"
                     FontFamily="centyru gothic"
-                    FontSize="30"
+                    FontSize="20"
                     Margin="0 10 "
                     />
+         
             </StackPanel>
             
         </Border>
