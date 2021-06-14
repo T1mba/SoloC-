@@ -10,7 +10,7 @@ namespace dizain
     {
        public int id { get; set; }
 
-        private string login, password, email;
+        private string login, pass, email;
         
         public string Login
         {
@@ -23,15 +23,15 @@ namespace dizain
                  login = value; 
             }
         }
-        public string Password
+        public string Pass
         {
             get
             {
-                return password;
+                return pass;
             }
             set
             {
-                password = value;
+                pass = value;
             }
         }
         public string Email
@@ -49,11 +49,11 @@ namespace dizain
 
         public User() { }
 
-        public User(string Login, string Email, string Password)
+        public User(string login, string email, string pass)
         {
-            this.login = Login;
-            this.email = Email;
-            this.password = Password;
+            this.login = login;
+            this.email = email;
+            this.pass = pass;
         }
       
 

@@ -50,7 +50,7 @@ namespace dizain
                 User AusUser = null;
                 using (ApplicationContext db = new ApplicationContext())
                 { 
-                    AusUser = db.Users.Where(b => b.Login == Login && b.Password == Pass ).FirstOrDefault();
+                    AusUser = db.Users.Where(b => b.Login == Login && b.Pass == Pass ).FirstOrDefault();
                 }
                 if (AusUser != null)
                 {
