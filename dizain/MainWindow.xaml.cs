@@ -29,7 +29,7 @@ namespace dizain
             List<User> users = db.Users.ToList();
             string str = "";
             foreach (User user in users)
-                str += "Login: " + user.Login + " | ";
+                str += "Password: " + user.Password + " | ";
             exampleText.Text = str;
         }
 
@@ -48,17 +48,17 @@ namespace dizain
             else if (Pass.Length < 5)
             {
                 PassBox.ToolTip = "Пароль должен состоять как минимум из пяти букв";
-                textBoxLogin.Background = Brushes.Red;
+                PassBox.Background = Brushes.Red;
             }
             else if (Pass != Pass2)
             {
                 PassBox2.ToolTip = "Пароли не совпадают";
-                textBoxLogin.Background = Brushes.Red;
+                PassBox2.Background = Brushes.Red;
             }
             else if (Email.Length < 5 || !Email.Contains("@") || !Email.Contains("."))
             {
                 textBoxEmail.ToolTip = "Не верный формат почты";
-                textBoxLogin.Background = Brushes.Red;
+                textBoxEmail.Background = Brushes.Red;
             }
             else
             {
