@@ -81,7 +81,17 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="ApplicationContext.cs" />
+    <Compile Include="AusWindow.xaml.cs">
+      <DependentUpon>AusWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Room.xaml.cs">
+      <DependentUpon>Room.xaml</DependentUpon>
+    </Compile>
     <Compile Include="User.cs" />
+    <Page Include="AusWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -94,6 +104,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Room.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

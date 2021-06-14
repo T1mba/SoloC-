@@ -26,11 +26,7 @@ namespace dizain
         {
             InitializeComponent();
             db = new ApplicationContext();
-            List<User> users = db.Users.ToList();
-            string str = "";
-            foreach (User user in users)
-                str += "Login: " + user.Login + " | ";
-            exampleText.Text = str;
+           
         }
 
         private void Button_Reg_Click(object sender, RoutedEventArgs e)
@@ -71,6 +67,9 @@ namespace dizain
                 textBoxEmail.ToolTip = " ";
                 textBoxEmail.Background = Brushes.Transparent;
                 MessageBox.Show("Регистрация прошла успешна");
+                AusWindow ausWindow = new AusWindow();
+                ausWindow.Show();
+                this.Hide();
                 User user = new User(Login, Pass, Email);
 
                 db.Users.Add(user);
@@ -78,6 +77,12 @@ namespace dizain
             }
             
         }
-        
+
+        private void Button_Window_AusClick(object sender, RoutedEventArgs e)
+        {
+            AusWindow ausWindow = new AusWindow();
+            ausWindow.Show();
+            this.Hide();
+        }
     }
 }

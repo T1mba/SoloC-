@@ -29,3 +29,7 @@ C:\Users\Тимба\source\repos\dizain\dizain\bin\Debug\System.Data.SQLite.Linq
 C:\Users\Тимба\source\repos\dizain\dizain\bin\Debug\EntityFramework.xml
 C:\Users\Тимба\source\repos\dizain\dizain\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Тимба\source\repos\dizain\dizain\bin\Debug\System.Data.SQLite.xml
+C:\Users\Тимба\source\repos\dizain\dizain\obj\Debug\AusWindow.g.cs
+C:\Users\Тимба\source\repos\dizain\dizain\obj\Debug\AusWindow.baml
+C:\Users\Тимба\source\repos\dizain\dizain\obj\Debug\Room.g.cs
+C:\Users\Тимба\source\repos\dizain\dizain\obj\Debug\Room.baml
