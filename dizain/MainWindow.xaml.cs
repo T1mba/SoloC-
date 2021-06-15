@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Media.Animation;
 
 namespace dizain
 {
@@ -26,36 +27,38 @@ namespace dizain
         {
             InitializeComponent();
             db = new ApplicationContext();
-            List<User> users = db.Users.ToList();
-            string str = "";
-            foreach (User user in users)
-                str += "Password: " + user.Password + " | ";
-            exampleText.Text = str;
+            DoubleAnimation Anime = new DoubleAnimation();
+            Anime.From = 0;
+            Anime.To = 450;
+            Anime.Duration = TimeSpan.FromSeconds(5);
+            Reg.BeginAnimation(Button.WidthProperty, Anime);
+    
+            
         }
 
         private void Button_Reg_Click(object sender, RoutedEventArgs e)
         {
-            string Login = textBoxLogin.Text.Trim();
-            string Pass = PassBox.Password.Trim();
-            string Pass2 = PassBox2.Password.Trim();
-            string Email = textBoxEmail.Text.ToLower().Trim();
+            string login = textBoxLogin.Text.Trim();
+            string pass = PassBox.Password.Trim();
+            string pass2 = PassBox2.Password.Trim();
+            string email = textBoxEmail.Text.ToLower().Trim();
 
-            if (Login.Length < 5)
+            if (login.Length < 5)
             {
                 textBoxLogin.ToolTip = "Логин должен состоять как минимум из пяти букв";
                 textBoxLogin.Background = Brushes.DarkRed;
             }
-            else if (Pass.Length < 5)
+            else if (pass.Length < 5)
             {
                 PassBox.ToolTip = "Пароль должен состоять как минимум из пяти букв";
                 PassBox.Background = Brushes.Red;
             }
-            else if (Pass != Pass2)
+            else if (pass !=pass2)
             {
                 PassBox2.ToolTip = "Пароли не совпадают";
                 PassBox2.Background = Brushes.Red;
             }
-            else if (Email.Length < 5 || !Email.Contains("@") || !Email.Contains("."))
+            else if (email.Length < 5 || !email.Contains("@") || !email.Contains("."))
             {
                 textBoxEmail.ToolTip = "Не верный формат почты";
                 textBoxEmail.Background = Brushes.Red;
@@ -70,14 +73,26 @@ namespace dizain
                 PassBox2.Background = Brushes.Transparent;
                 textBoxEmail.ToolTip = " ";
                 textBoxEmail.Background = Brushes.Transparent;
-                MessageBox.Show("Регистрация прошла успешна");
-                User user = new User(Login, Pass, Email);
 
+                MessageBox.Show("Регистрация прошла успешна");
+
+
+                User user = new User(login, pass, email);
                 db.Users.Add(user);
                 db.SaveChanges();
+                AuthWindow authWindow = new AuthWindow();
+                authWindow.Show();
+                Hide();
+                
             }
             
         }
-        
+
+        private void Button_WindowAuth_Click(object sender, RoutedEventArgs e)
+        {
+            AuthWindow authWindow = new AuthWindow();
+            authWindow.Show();
+            Hide();
+        }
     }
 }

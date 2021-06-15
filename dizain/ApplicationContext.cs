@@ -10,8 +10,6 @@ namespace dizain
     class ApplicationContext : DbContext
     {
         public DbSet<User> Users { get; set; }
-
-        public ApplicationContext() : base("DefaultConnection") { }
-
+        public ApplicationContext() :base("DefaultConnection") { }
     }
 }

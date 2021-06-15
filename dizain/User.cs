@@ -8,37 +8,36 @@ namespace dizain
 {
     class User
     {
-       public int id { get; set; }
+        public int id { get; set; }
+        private string login, pass, email;
 
-        private string login, password, email;
-        
         public string Login
         {
             get
             {
-                return  login;
+                return login;
             }
             set
             {
-                 login = value; 
+                login = value;
             }
         }
-        public string Password
+       public string Pass
         {
             get
             {
-                return password;
+                return pass;
             }
             set
             {
-                password = value;
+                pass = value;
             }
         }
         public string Email
         {
             get
             {
-                return email;
+                return  email;
             }
             set
             {
@@ -46,16 +45,20 @@ namespace dizain
             }
         }
 
-
         public User() { }
-
-        public User(string Login, string Email, string Password)
+        public User(string login, string pass, string email)
         {
-            this.login = Login;
-            this.email = Email;
-            this.password = Password;
+            this.login = login;
+            this.pass = pass;
+            this.email = email;
         }
-      
+        /*public override string ToString()
+        {
+            return "Пользователь: " + Login + ". Email: " + Email;     
+        }
+        */
 
     }
+    
+
 }

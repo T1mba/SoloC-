@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Тимба\source\repos\dizain\dizain\obj\Debug\
+C:\Users\Тимба\source\repos\SoloC-\dizain\obj\Debug\
 dizain
 none
 false
 DEBUG;TRACE
-C:\Users\Тимба\source\repos\dizain\dizain\App.xaml
-11151548125
+C:\Users\Тимба\source\repos\SoloC-\dizain\App.xaml
+31297197955
 
-8-466683857
-21-1933610213
-MainWindow.xaml;
+10-2021765714
+21877729868
+AuthWindow.xaml;MainWindow.xaml;UserPageWindow.xaml;
 
-False
+True
 
